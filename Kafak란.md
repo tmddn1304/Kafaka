@@ -76,3 +76,22 @@ Event(메시지/데이터)가 사용되는 모든곳
 저렴한 장비로 초당 2백만 Writes
 
 ### Apache Kafka 주요요소
+
+Producer : 메시지를 생산해서 Kafka의 Topic으로 메시지를 보내는 애플리케이션
+
+Consumer : Topic의 메시지를 가져와서 소비(Consume)하는 애플리케이션
+
+Consumer Group : Topic의 메시지를 사용하기 위해 협력하는 Consumer들의 집합
+
+하나의 Consumer는 하나의 Consumer Group에 포함되며, 
+Consumer Group내의 Consumer들은 협력하여 Topic의 메시지를 분산 병렬처리함
+
+
+Producer와 Consumer의 분리
+-> 기본동작 방식
+
+Producer와 Consumer는 서로 알지 못하며, Producer와 Consumer는 각각 고유의 속도로 Commit Log에 Write 및 Read를 수행
+
+다른 Consumer Group에 속한 Consumer들은 서로 관련이 없으며, Commit Log에 있는 Event(Message)를 동시에 다른 위치에서 Read 할 수 있음
+
+![Alt text](consumer.png)
