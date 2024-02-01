@@ -94,4 +94,7 @@ Producer와 Consumer는 서로 알지 못하며, Producer와 Consumer는 각각 
 
 다른 Consumer Group에 속한 Consumer들은 서로 관련이 없으며, Commit Log에 있는 Event(Message)를 동시에 다른 위치에서 Read 할 수 있음
 
-![Alt text](consumer.png)
+![Alt text](/image/consumer.png)
+
+
+![Alt text](image.png)
