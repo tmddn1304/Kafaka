@@ -97,4 +97,4 @@ Producer와 Consumer는 서로 알지 못하며, Producer와 Consumer는 각각 
 ![Alt text](/image/consumer.png)
 
 
-![Alt text](image.png)
+![Alt text](/image/commitLog.png)
